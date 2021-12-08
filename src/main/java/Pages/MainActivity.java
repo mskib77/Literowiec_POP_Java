@@ -50,7 +50,11 @@ public class MainActivity {
 
 
         //2021.12.08 18.25 - to jest OK, dziala:
-        Actions actions = new Actions(driver);
+
+       AndroidDriver<AndroidElement> driver1 = new AndroidDriver<AndroidElement>();
+
+
+        Actions actions = new Actions(driver1);
         actions.clickAndHold(imageView).perform();
         //2021.12.08 18.25 - to jest OK, patrz wyzej
 
