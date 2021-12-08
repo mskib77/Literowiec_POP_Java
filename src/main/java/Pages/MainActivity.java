@@ -48,8 +48,13 @@ public class MainActivity {
 //        image = self.get_image()
 //        action.long_press(image).perform().release()
 
+
+        //2021.12.08 18.25 - to jest OK, dziala:
         Actions actions = new Actions(driver);
         actions.clickAndHold(imageView).perform();
+        //2021.12.08 18.25 - to jest OK, patrz wyzej
+
+
 
 //        TouchActions action = new TouchActions(driver);
 //        action.longPress(imageView).perform();
@@ -58,6 +63,7 @@ public class MainActivity {
 //        TouchAction action = new TouchAction(driver);
 //        action.press((PointOption) imageView).release();
         int x =1;
+
     }
 
     public void metoda2() {
