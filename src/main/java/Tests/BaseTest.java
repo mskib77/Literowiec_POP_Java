@@ -16,8 +16,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BaseTest {
-//    public AndroidDriver<AndroidElement> driver;
-    WebDriver driver;
+    public AndroidDriver<AndroidElement> driver;
+//    WebDriver driver;
     private DesiredCapabilities cap;
 
     protected MainActivity mainActivity;
