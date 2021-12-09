@@ -47,10 +47,6 @@ public class MainActivity {
 
     public void gotToSettingsActivity() {
 //        """Long touching on the image when the image is present"""
-//        action = TouchAction(self.driver)
-//        image = self.get_image()
-//        action.long_press(image).perform().release()
-
 
         //2021.12.08 18.25 - to jest OK, dziala:
         //***************************
@@ -62,14 +58,8 @@ public class MainActivity {
 
 
         TouchAction t = new TouchAction(driver);
-//        t.tap(tapOptions().withElement(element(imageView))).perform(); -> wzorzec z Udemy
+//      t.tap(tapOptions().withElement(element(imageView))).perform(); -> wzorzec z Udemy
         t.longPress(longPressOptions().withElement(element(imageView))).perform(); //<-na podstawie wzorca z Udemy
-
-//        action.longPress(imageView).perform();
-//        action.perform();
-
-//        TouchAction action = new TouchAction(driver);
-//        action.press((PointOption) imageView).release();
 
     }
 
